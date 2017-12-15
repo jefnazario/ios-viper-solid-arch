@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beer Detail View Controller-->
+        <scene sceneID="21t-a4-8wR">
+            <objects>
+                <viewController storyboardIdentifier="DetailView" id="xnH-2J-340" customClass="BeerDetailViewController" customModule="designpattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MNh-kE-uMG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkM-TU-SUb">
+                                <rect key="frame" x="20" y="40" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rFU-SM-ufB" firstAttribute="trailing" secondItem="kkM-TU-SUb" secondAttribute="trailing" constant="20" id="JTL-jE-Doi"/>
+                            <constraint firstItem="kkM-TU-SUb" firstAttribute="leading" secondItem="rFU-SM-ufB" secondAttribute="leading" constant="20" id="R2C-fw-5vd"/>
+                            <constraint firstItem="kkM-TU-SUb" firstAttribute="top" secondItem="rFU-SM-ufB" secondAttribute="top" constant="40" id="Tfx-Oq-bI7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rFU-SM-ufB"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="lblName" destination="kkM-TU-SUb" id="wTl-JS-spJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuD-ni-RNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="81"/>
+        </scene>
+    </scenes>
+</document>

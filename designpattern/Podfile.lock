@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (4.6.0)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - ObjectMapper (3.1.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SVProgressHUD (2.2.2)
+  - SwiftLint (0.24.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - ObjectMapper (~> 3.1)
+  - R.swift
+  - RealmSwift
+  - RxCocoa
+  - RxSwift
+  - SVProgressHUD
+  - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
+
+PODFILE CHECKSUM: cff9081dd82a32acb9b86c6785078ba4e1ac0ef1
+
+COCOAPODS: 1.2.1

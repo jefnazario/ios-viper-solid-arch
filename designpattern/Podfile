@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'designpattern' do
+    pod 'Alamofire'
+    pod 'ObjectMapper', '~> 3.1'
+    pod 'RealmSwift'
+    pod 'SVProgressHUD'
+    pod 'SwiftLint'
+    pod 'AlamofireObjectMapper'
+    pod 'R.swift'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+end
