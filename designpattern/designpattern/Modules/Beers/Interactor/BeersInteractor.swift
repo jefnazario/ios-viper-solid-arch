@@ -26,6 +26,4 @@ class BeersInteractor: IGenericInteractor {
         // Caso aconteça alguma falha, vamos enviar pro output a informação de falha
         // output.itemsFetchFailed()
     }
-    
-    
 }
