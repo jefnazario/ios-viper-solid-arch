@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  designpattern
+
+  Created by Jeferson Nazario on 17/03/18.
+  Copyright © 2018 jnazario.com. All rights reserved.
+*/
+
+// Requests
+"requestGenericError" = "There's an error on your request. Please, try again later.";
+
+// Screens
+"loginScreenDescription" = "Hi there, welcome to my app.";
+"allBeersPageTitle" = "All Beers";

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DbN-Bs-F0k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DbN-Bs-F0k">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,40 +26,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="beerCell" id="TOL-In-eXz" customClass="BeerTableViewCell" customModule="designpattern" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="beerCell" rowHeight="60" id="TOL-In-eXz" customClass="BeerTableViewCell" customModule="designpattern" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TOL-In-eXz" id="Qu5-Xr-ABp">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zp3-dU-cqU">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                        </imageView>
+                                        <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEU-uv-2ns">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="V0j-Od-8OB">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="dark"/>
+                                        </visualEffectView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da cerveja" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeB-vf-xKC">
-                                            <rect key="frame" x="15" y="12" width="150" height="21"/>
+                                            <rect key="frame" x="15" y="29.5" width="150" height="19.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="150" id="WQF-GU-Z8b"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="1" height="1"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tagline" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDG-Xs-392">
-                                            <rect key="frame" x="180" y="12" width="125" height="21"/>
+                                            <rect key="frame" x="180" y="24" width="125" height="25"/>
                                             <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="1" height="1"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="oeB-vf-xKC" secondAttribute="bottom" constant="10.5" id="A2O-j8-eag"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZEU-uv-2ns" secondAttribute="trailing" id="Aza-iZ-Nre"/>
+                                        <constraint firstItem="zp3-dU-cqU" firstAttribute="top" secondItem="Qu5-Xr-ABp" secondAttribute="top" id="GpM-9M-TKp"/>
+                                        <constraint firstItem="ZEU-uv-2ns" firstAttribute="top" secondItem="Qu5-Xr-ABp" secondAttribute="top" id="O9h-oe-Ctq"/>
                                         <constraint firstItem="HDG-Xs-392" firstAttribute="leading" secondItem="oeB-vf-xKC" secondAttribute="trailing" constant="15" id="Ped-7K-fjh"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZEU-uv-2ns" secondAttribute="bottom" id="PsX-Kc-EUY"/>
+                                        <constraint firstAttribute="bottom" secondItem="zp3-dU-cqU" secondAttribute="bottom" id="Qeh-O2-Yof"/>
                                         <constraint firstItem="oeB-vf-xKC" firstAttribute="leading" secondItem="Qu5-Xr-ABp" secondAttribute="leading" constant="15" id="T3o-4b-VkE"/>
                                         <constraint firstAttribute="trailing" secondItem="HDG-Xs-392" secondAttribute="trailing" constant="15" id="WRs-A1-5yr"/>
-                                        <constraint firstItem="oeB-vf-xKC" firstAttribute="top" secondItem="Qu5-Xr-ABp" secondAttribute="top" constant="12" id="YC9-ED-faa"/>
-                                        <constraint firstItem="HDG-Xs-392" firstAttribute="top" secondItem="Qu5-Xr-ABp" secondAttribute="top" constant="12" id="bAs-2h-K39"/>
+                                        <constraint firstItem="oeB-vf-xKC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Qu5-Xr-ABp" secondAttribute="top" constant="12" id="YC9-ED-faa"/>
+                                        <constraint firstItem="HDG-Xs-392" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Qu5-Xr-ABp" secondAttribute="top" constant="12" id="bAs-2h-K39"/>
+                                        <constraint firstAttribute="trailing" secondItem="zp3-dU-cqU" secondAttribute="trailing" id="dy4-1i-PLg"/>
+                                        <constraint firstItem="ZEU-uv-2ns" firstAttribute="leading" secondItem="Qu5-Xr-ABp" secondAttribute="leading" id="qir-3M-Jq0"/>
+                                        <constraint firstItem="zp3-dU-cqU" firstAttribute="leading" secondItem="Qu5-Xr-ABp" secondAttribute="leading" id="uUQ-2P-f3B"/>
                                         <constraint firstAttribute="bottom" secondItem="HDG-Xs-392" secondAttribute="bottom" constant="10.5" id="vXB-2g-TSn"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="imgBeer" destination="zp3-dU-cqU" id="aub-Oc-JRa"/>
                                     <outlet property="lblName" destination="oeB-vf-xKC" id="hZh-ex-nZH"/>
                                     <outlet property="lblTagline" destination="HDG-Xs-392" id="tKV-UT-hyZ"/>
                                 </connections>

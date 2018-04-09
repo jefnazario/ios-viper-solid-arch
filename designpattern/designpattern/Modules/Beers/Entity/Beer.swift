@@ -6,10 +6,7 @@
 //  Copyright © 2017 jnazario.com. All rights reserved.
 //
 
-import Foundation
-import ObjectMapper
-
-struct Beer: Mappable {
+struct Beer {
     var image: String! = ""
     var name: String! = ""
     var tagline: String! = ""
@@ -22,12 +19,22 @@ struct Beer: Mappable {
         self.beerDescription = beerDescription
     }
     
-    init?(map: Map) { }
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: MyStructKeys.self)
+        let imageUrl: String = try container.decode(String.self, forKey: .image)
+        let name: String = try container.decode(String.self, forKey: .name)
+        let tagline: String = try container.decode(String.self, forKey: .tagline)
+        let description: String = try container.decode(String.self, forKey: .beerDescription)
+        
+        self.init(image: imageUrl, name: name, tagline: tagline, beerDescription: description)
+    }
+}
 
-    mutating func mapping(map: Map) {
-        image <- map["image_url"]
-        name <- map["name"]
-        tagline <- map["tagline"]
-        beerDescription <- map["description"]
+extension Beer: Decodable {
+    enum MyStructKeys: String, CodingKey {
+        case image = "image"
+        case name = "name"
+        case tagline = "topic"
+        case beerDescription = "description"
     }
 }

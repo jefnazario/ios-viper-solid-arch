@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BeerDetailViewController: UIViewController {
 
@@ -14,11 +15,16 @@ class BeerDetailViewController: UIViewController {
     var beer: Beer?
     
     @IBOutlet var lblName: UILabel!
+    @IBOutlet weak var imgBeer: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let beer = beer {
             lblName.text = beer.name
+            if let url: URL = URL(string: beer.image) {
+                imgBeer.kf.setImage(with: url)
+            }
         }
     }
 

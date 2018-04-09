@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,26 +15,52 @@
             <objects>
                 <viewController storyboardIdentifier="DetailView" id="xnH-2J-340" customClass="BeerDetailViewController" customModule="designpattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MNh-kE-uMG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkM-TU-SUb">
-                                <rect key="frame" x="20" y="40" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xra-BU-3kX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSi-Xb-756">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sUU-U5-gGF">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkM-TU-SUb">
+                                            <rect key="frame" x="20" y="30" width="280" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="shadowOffset" width="1" height="1"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kkM-TU-SUb" firstAttribute="top" secondItem="sUU-U5-gGF" secondAttribute="top" constant="30" id="bEG-HB-bL9"/>
+                                        <constraint firstAttribute="trailing" secondItem="kkM-TU-SUb" secondAttribute="trailing" constant="20" id="q1G-fb-Wjh"/>
+                                        <constraint firstItem="kkM-TU-SUb" firstAttribute="leading" secondItem="sUU-U5-gGF" secondAttribute="leading" constant="20" id="v3i-7m-Ja1"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rFU-SM-ufB" firstAttribute="trailing" secondItem="kkM-TU-SUb" secondAttribute="trailing" constant="20" id="JTL-jE-Doi"/>
-                            <constraint firstItem="kkM-TU-SUb" firstAttribute="leading" secondItem="rFU-SM-ufB" secondAttribute="leading" constant="20" id="R2C-fw-5vd"/>
-                            <constraint firstItem="kkM-TU-SUb" firstAttribute="top" secondItem="rFU-SM-ufB" secondAttribute="top" constant="40" id="Tfx-Oq-bI7"/>
+                            <constraint firstItem="rFU-SM-ufB" firstAttribute="bottom" secondItem="zSi-Xb-756" secondAttribute="bottom" constant="300" id="5e9-Uk-udi"/>
+                            <constraint firstItem="rFU-SM-ufB" firstAttribute="trailing" secondItem="Xra-BU-3kX" secondAttribute="trailing" id="7au-Mb-hwP"/>
+                            <constraint firstItem="zSi-Xb-756" firstAttribute="top" secondItem="rFU-SM-ufB" secondAttribute="top" id="Ca9-KE-QyS"/>
+                            <constraint firstItem="Xra-BU-3kX" firstAttribute="leading" secondItem="rFU-SM-ufB" secondAttribute="leading" id="eVv-nR-nex"/>
+                            <constraint firstItem="rFU-SM-ufB" firstAttribute="trailing" secondItem="zSi-Xb-756" secondAttribute="trailing" id="gBB-g4-ZRE"/>
+                            <constraint firstItem="Xra-BU-3kX" firstAttribute="top" secondItem="rFU-SM-ufB" secondAttribute="top" id="hjs-Bh-WPi"/>
+                            <constraint firstItem="rFU-SM-ufB" firstAttribute="bottom" secondItem="Xra-BU-3kX" secondAttribute="bottom" constant="300" id="nUA-3b-2D7"/>
+                            <constraint firstItem="zSi-Xb-756" firstAttribute="leading" secondItem="rFU-SM-ufB" secondAttribute="leading" id="sqH-gY-xTw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rFU-SM-ufB"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="imgBeer" destination="Xra-BU-3kX" id="CDo-hU-Idu"/>
                         <outlet property="lblName" destination="kkM-TU-SUb" id="wTl-JS-spJ"/>
                     </connections>
                 </viewController>

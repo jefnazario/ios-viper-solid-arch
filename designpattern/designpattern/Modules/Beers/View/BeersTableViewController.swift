@@ -31,13 +31,19 @@ class BeersTableViewController: UITableViewController {
     
     // MARK: - View settings
     private func setupView() {
-        navigationItem.title = "All Beers"
+        navigationItem.title = Localized.allBeersPageTitle.rawValue.translate()
     }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return beers.count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        // Resolver o problema da altura da célula aqui
+        
+        return super.tableView(tableView, heightForRowAt: indexPath)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
