@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Rswift
 
 class BeersRouter: IGenericRouter {
     var viewController: UIViewController?
@@ -19,7 +20,7 @@ class BeersRouter: IGenericRouter {
     }
     
     func assembleModule() -> UIViewController {
-        let view = StoryboardFactory.instantiate(name: "BeersStoryboard") as! BeersTableViewController
+        let view = StoryboardFactory.instantiate(name: R.storyboard.beersStoryboard.name) as! BeersTableViewController
         let presenter = BeersPresenter()
         let interactor = BeersInteractor()
         let router = BeersRouter()

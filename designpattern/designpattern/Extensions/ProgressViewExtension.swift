@@ -11,10 +11,10 @@ import SVProgressHUD
 
 extension IProgressView where Self: UIViewController {
     func showProgress() {
-//        SVProgressHUD.show()
+        SVProgressHUD.show()
     }
     
     func hideProgress() {
-//        SVProgressHUD.dismiss()
+        SVProgressHUD.dismiss()
     }
 }

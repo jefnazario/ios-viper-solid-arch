@@ -33,6 +33,4 @@ class BeersInteractor: IGenericInteractor {
         
         
     }
-    
-    
 }

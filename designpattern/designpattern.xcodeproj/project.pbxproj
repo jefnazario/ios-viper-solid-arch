@@ -18,6 +18,8 @@
 		68AD2256205B668C0097ABC2 /* RequestGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD2255205B668C0097ABC2 /* RequestGet.swift */; };
 		68AD2258205B73720097ABC2 /* RequestPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD2257205B73720097ABC2 /* RequestPost.swift */; };
 		68AD225A205B73FA0097ABC2 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD2259205B73FA0097ABC2 /* Endpoint.swift */; };
+		6857BEA2202E26F400AC9728 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857BEA1202E26F300AC9728 /* R.generated.swift */; };
+>>>>>>> c16643132ebcbcaeef8d1964e94dfc259aa7ab28
 		68B11AF71FE0C09F00A0C1CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B11AF61FE0C09F00A0C1CD /* AppDelegate.swift */; };
 		68B11AFE1FE0C09F00A0C1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68B11AFD1FE0C09F00A0C1CD /* Assets.xcassets */; };
 		68B11B011FE0C09F00A0C1CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B11AFF1FE0C09F00A0C1CD /* LaunchScreen.storyboard */; };
@@ -55,9 +57,13 @@
 		684B8531205D2E9100B3B877 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		684F23A22002B1F400C7B3BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		684F23A42002B20100C7B3BD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		68AD2255205B668C0097ABC2 /* RequestGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGet.swift; sourceTree = "<group>"; };
 		68AD2257205B73720097ABC2 /* RequestPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPost.swift; sourceTree = "<group>"; };
 		68AD2259205B73FA0097ABC2 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+=======
+		6857BEA1202E26F300AC9728 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+>>>>>>> c16643132ebcbcaeef8d1964e94dfc259aa7ab28
 		68B11AF31FE0C09F00A0C1CD /* designpattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = designpattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B11AF61FE0C09F00A0C1CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68B11AFD1FE0C09F00A0C1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,9 +151,13 @@
 		68B11AF51FE0C09F00A0C1CD /* designpattern */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				68B5C0F9207254AD00DCBC3F /* Domain */,
 				684B852E205D2E0D00B3B877 /* Localization */,
 				68311F02203A61A500B62CB9 /* Networking */,
+=======
+				6857BEA1202E26F300AC9728 /* R.generated.swift */,
+>>>>>>> c16643132ebcbcaeef8d1964e94dfc259aa7ab28
 				68B11B3E1FE3C29500A0C1CD /* Factory */,
 				68B11B331FE3B7A900A0C1CD /* Extensions */,
 				68B11B0A1FE3AD5800A0C1CD /* Modules */,
@@ -346,6 +356,7 @@
 				68B11AF11FE0C09F00A0C1CD /* Resources */,
 				F9A69DA31BD6B6D03DC2C3CD /* [CP] Embed Pods Frameworks */,
 				D9DD8C25FA8C5B76447342C9 /* [CP] Copy Pods Resources */,
+				6857BEA0202E267300AC9728 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -408,6 +419,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6857BEA0202E267300AC9728 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
 		7A7E0D8DBA6F4C1B2E2752BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -491,6 +515,7 @@
 				684B852D205D28A900B3B877 /* RequestType.swift in Sources */,
 				68B11B2C1FE3B57E00A0C1CD /* Beer.swift in Sources */,
 				68B11B111FE3ADBE00A0C1CD /* IGenericInteractor.swift in Sources */,
+				6857BEA2202E26F400AC9728 /* R.generated.swift in Sources */,
 				68B11B321FE3B6A700A0C1CD /* BeersTableViewController.swift in Sources */,
 				68B11B221FE3B24A00A0C1CD /* RootRouter.swift in Sources */,
 				68B11B401FE3C2FB00A0C1CD /* StoryboardFactory.swift in Sources */,

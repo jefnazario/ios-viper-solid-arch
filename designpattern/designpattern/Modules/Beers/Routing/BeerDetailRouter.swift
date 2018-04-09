@@ -7,19 +7,16 @@
 //
 
 import UIKit
+import Rswift
 
 class BeerDetailRouter: IGenericRouter {
     var viewController: UIViewController?
     
-    func present<T>(forItem item: T) {
-        
-    }
+    func present<T>(forItem item: T) { }
     
     func assembleModule() -> UIViewController {
-        // Lembrar de usar a biblioteca RSwift
-        // let view = R.storyboard.detailsStoryboard.detailsViewController()
-        let story = UIStoryboard.init(name: "BeerDetailStoryboard", bundle: nil)
-        let detail = story.instantiateViewController(withIdentifier: "DetailView") as! BeerDetailViewController
+        let story = R.storyboard.beerDetailStoryboard()
+        let detail = story.instantiateViewController(withIdentifier: R.storyboard.beerDetailStoryboard.name) as! BeerDetailViewController
         
         let presenter = BeerDetailPresenter()
         detail.presenter = presenter
